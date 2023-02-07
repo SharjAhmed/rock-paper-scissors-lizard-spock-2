@@ -39,6 +39,9 @@ function playGame(playerChoice) {
         playerChoice = "spock";
     }
 
+    document.getElementById("player-img").src = `assets/images/${player}.png`;
+
+
     computerChoice = Math.floor(Math.random() * 5);
     if (computerChoice == "0") {
         computerChoice = "rock";
@@ -52,12 +55,14 @@ function playGame(playerChoice) {
         computerChoice = "spock";
     }
 
+    document.getElementById("computer-img").src = `assets/images/${computer}.png`;
+
     checkWinner();
     gameOver();
 
 }
 
-// checkwinner function, by implementing all game rules.
+// check winner function, by implementing all game rules.
 // Starting increment player or computer score function
 
 function checkWinner() {
