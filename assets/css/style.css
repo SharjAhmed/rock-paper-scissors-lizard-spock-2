@@ -5,6 +5,7 @@
     padding: 0;
     background-color: gray;
     color: white;
+    text-align: center;
 }
 
 html {
@@ -19,9 +20,57 @@ body {
 /* title area */
 .title-area {
     font-size: 140%;
-    text-align: center;
     margin: 2% 0;
 }
 
+/* game area */
+.fa-hand-back-fist {
+    color: #FF2020;
+}
+
+.fa-hand {
+    color: #FF7B20;
+}
+
+.fa-hand-scissors {
+    color: #F1C40F;
+}
+
+.fa-hand-lizard {
+    color: #00CC00;
+}
+
+.fa-hand-spock {
+    color: #0093FF;
+}
+
+.game-area {
+    margin-bottom: 3%;
+}
+
+.button {
+    font-size: 400%;
+    border-style: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.button:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 2px white;
+}
+
+.choice {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.choice img {
+    width: 200px;
+    height: 200px;
+    margin-top: 2%;
+}
 
 
