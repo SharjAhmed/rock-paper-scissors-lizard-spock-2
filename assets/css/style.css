@@ -17,13 +17,13 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
-/* title area */
+/* Title Area */
 .title-area {
   font-size: 140%;
   margin: 2% 0;
 }
 
-/* game area */
+/* Game Area */
 .fa-hand-back-fist {
   color: #ff2020;
 }
@@ -81,7 +81,7 @@ body {
   padding: 1% 0;
 }
 
-/* footer */
+/* Footer */
 
 footer {
   position: absolute;
@@ -94,7 +94,7 @@ footer {
   margin: 0% 20%;
 }
 
-/* media queries for smaller screens */
+/* Media Queries for Smaller Screens */
 @media screen and (max-width: 1280px) {
 }
 

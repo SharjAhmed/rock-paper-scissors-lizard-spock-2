@@ -7,13 +7,19 @@
     <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock" />
     <meta name="keywords" content="rock, paper, scissors, lizard, spock" />
 
-    <!-- google fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock Paper Scissors Lizard Spock</title>
@@ -48,16 +54,16 @@
       <br />
       <div>
         <span class="player-choice choice">
-            <p>Player:</p>
+          <p>Player:</p>
+          <p id="player-score" class="name">0</p>
           <img src="assets/images/logo.png" alt="Player Choice" />
         </span>
         <span class="computer-choice choice">
-            <p>Computer:</p>
+          <p>Computer:</p>
+          <p id="computer-score" class="name">0</p>
           <img src="assets/images/logo.png" alt="Computer Choice" />
         </span>
-        <div id="results">
-          
-        </div>
+        <div id="results"></div>
       </div>
     </section>
     <br />
@@ -76,7 +82,7 @@
 
     <script src="assets/js/script.js"></script>
 
-    <!-- font awesome script -->
+    <!-- Font Awesome Script -->
     <script
       src="https://kit.fontawesome.com/04ce61957a.js"
       crossorigin="anonymous"
