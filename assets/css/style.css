@@ -1,87 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    background-color: gray;
-    color: white;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  color: white;
+  text-align: center;
 }
 
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
 }
 
 /* title area */
 .title-area {
-    font-size: 140%;
-    margin: 2% 0;
+  font-size: 140%;
+  margin: 2% 0;
 }
 
 /* game area */
 .fa-hand-back-fist {
-    color: #FF2020;
+  color: #ff2020;
 }
 
 .fa-hand {
-    color: #FF7B20;
+  color: #ff7b20;
 }
 
 .fa-hand-scissors {
-    color: #F1C40F;
+  color: #f1c40f;
 }
 
 .fa-hand-lizard {
-    color: #00CC00;
+  color: #00cc00;
 }
 
 .fa-hand-spock {
-    color: #0093FF;
+  color: #0093ff;
 }
 
 .game-area {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 .button {
-    font-size: 400%;
-    border-style: hidden;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  font-size: 400%;
+  border-style: hidden;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .button:hover {
-    cursor: pointer;
-    -webkit-text-stroke: 2px white;
+  cursor: pointer;
+  -webkit-text-stroke: 2px white;
 }
 
 .choice {
-    display: inline-flex;
-    flex-direction: column;
-    margin: 2%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 2%;
 }
 
 .choice img {
-    width: 200px;
-    height: 200px;
-    margin-top: 2%;
+  width: 200px;
+  height: 200px;
+  margin-top: 2%;
+}
+
+#results {
+  width: 100%;
+  background-color: gold;
+  font-size: 100%;
+  color: gray;
+  padding: 1% 0;
 }
 
 /* footer */
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 2%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 #rules {
-    margin: 0% 20%;
+  margin: 0% 20%;
+}
+
+/* media queries for smaller screens */
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 768px) {
+  .title-area {
+    font-size: 120%;
+  }
+
+  .choice p {
+    font-size: 220%;
+  }
+
+  .choice img {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
