@@ -6,6 +6,9 @@ const playerScore = document.getElementsId("player-score");
 const computerScore = document.getElementById("computer-score");
 var playerChoice = document.getElementById("player-choice");
 var computerChoice = document.getElementById("computer-choice");
+let rules = document.getElementById("rules");
+let rulesButtion = document.getElementById("rules-button");
+let close = document.getElementsByClassName("close");
 
 let choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
@@ -124,3 +127,19 @@ function incrementComputerScore() {
     let oldScore = computerScore.innerText;
     computerScore.innerText = ++oldScore;
 }	
+
+//Rules
+
+rulesButton.onclick = function () {
+    rules.style.display = "block";
+};
+
+close.onclick = function () {
+    rules.style.display = "none";
+};
+
+window.onclick = function (event) {
+    if (event.target == rules) {
+        rules.style.display = "none";
+    }
+};
