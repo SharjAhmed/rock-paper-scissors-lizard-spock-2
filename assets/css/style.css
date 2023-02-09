@@ -203,7 +203,7 @@ footer {
   }
 
   .game-area {
-    padding: 45px;
+    padding: 45px 0;
   }
   
   #player-choice {
@@ -231,7 +231,15 @@ footer {
   }
 
   #rules-button {
-    margin-top: 20%;
+    margin: 20% 0;
+  }
+
+  .rules-content h1 {
+      font-size: 25px;
+  }
+
+  .rules-content h3 {
+    font-size: 19px;
   }
 }
 
