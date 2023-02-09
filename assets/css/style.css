@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  background-color: #45414d;
-  color: #ffffff;
+  font-family: "Comfortaa", cursive;
   text-align: center;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
+body {
+  background-color: #45414d;
+  color: #ffffff;
 }
 
-body {
-  font-family: "Comfortaa", cursive;
+/* header */
+h1 {
+  font-size: 40px;
 }
 
 .fa-hand-back-fist {
@@ -37,17 +35,11 @@ body {
   color: #0093ff;
 }
 
-/* Title Area */
-h1 {
-  font-size: 40px;
-  margin: 2% 0;
-}
-
 /* Game Area */
+
 .game-area {
   display: inline-block;
   margin: 1% 3%;
-  font-size: 20px;
 }
 
 #player-choice {
@@ -84,14 +76,15 @@ h1 {
 }
 
 #player-score {
-  padding: 35px 0;
+  padding-top: 5px;
 }
 
-#computer-score {
-  padding: 35px 0;
+h2 {
+  font-size: 35px;
 }
 
-#choices p {
+p {
+  font-size: 25px;
   padding-bottom: 10px;
 }
 
@@ -101,20 +94,7 @@ h1 {
   background-color: gold;
   color: #45414d;
   padding: 0.5% 0;
-}
-
-
-/* Footer */
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 2%;
-}
-
-#credit {
-  font-size: 75%;
+  margin: 5% 0;
 }
 
 /*rules button*/
@@ -127,7 +107,7 @@ footer {
   border-radius: 25px;
   padding: 15px;
   min-height: 30px;
-  margin: 7%;
+  margin-top: 3%;
 }
 
 #rules-button:hover {
@@ -155,7 +135,6 @@ footer {
   color: #45414d;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #45414d;
   width: 40%;
 }
 
@@ -174,21 +153,40 @@ footer {
   cursor: pointer;
 }
 
-/* Media Queries for Smaller Screens */
-@media screen and (max-width: 1280px) {}
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.credit {
+  font-size: 60%;
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
-  .title-area {
-    font-size: 120%;
+  #title-area {
+    font-size: 27px;
+    margin: 5% 0;
   }
 
-  .choice p {
-    font-size: 220%;
+  h3 {
+    padding-top: 5%;
+    margin: 3% 0;
   }
 
-  .choice img {
-    margin-top: 15%;
+  .game-area {
+    margin: 5% 10%;
+  }
+
+  #rules-button {
+    margin-top: 10%;
+  }
+
+  .rules-content {
+    width: 80%;
   }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 420px) {}

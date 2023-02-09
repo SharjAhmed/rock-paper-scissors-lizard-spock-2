@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock" />
-    <meta name="keywords" content="rock, paper, scissors, lizard, spock" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock"/>
+    <meta name="keywords" content="rock, paper, scissors, lizard, spock"/>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
       rel="stylesheet"
-    />
+   />
+
+    <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+    <link rel="manifest" href="site.webmanifest"/>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Rock Paper Scissors Lizard Spock</title>
   </head>
   <body>
-    <!-- Title Area -->
-    <h1 class="title-area">
+
+    <!-- Header-->
+    <h1 id="title-area">
       Rock <i class="fa-solid fa-hand-back-fist"></i> | Paper
       <i class="fa-solid fa-hand"></i> | Scissors
       <i class="fa-solid fa-hand-scissors"></i> | Lizard
@@ -34,7 +36,7 @@
       <i class="fa-solid fa-hand-spock"></i>
     </h1>
 
-    <!-- Game Area -->
+    <!-- Game & Score Area -->
     <h3>Choose Your Weapon:</h3>
     <div id="choices"></div>
     <span>
@@ -51,47 +53,41 @@
     </span><br>
     <br>
     <div id="result"></div>
-    <footer>
-      <!-- Rules -->
-      <button id="rules-button">Rules</button>
-      <div id="rules" class="game-rules">
-        <div class="rules-content">
-          <span class="close">X</span>
-          <p>
-            <h1>Make a choice by choosing your weapon:</h1>
-            <h3>Rock <i class="fa-solid fa-hand-back-fist"></i> | Paper <i class="fa-solid fa-hand"></i> | Scissors <i class="fa-solid fa-hand-scissors"></i> | Lizard <i class="fa-solid fa-hand-lizard"></i> | Spock <i class="fa-solid fa-hand-spock"></i></h3>
-            <br>
-            <i class="fa-solid fa-hand-back-fist"></i> crushes <i class="fa-solid fa-hand-scissors"></i>
-            <br>
-            <i class="fa-solid fa-hand-back-fist"></i> crushes <i class="fa-solid fa-hand-lizard"></i>
-            <br>
-            <i class="fa-solid fa-hand"></i> covers <i class="fa-solid fa-hand-back-fist"></i>
-            <br>  
-            <i class="fa-solid fa-hand"></i> disproves <i class="fa-solid fa-hand-spock"></i>
-            <br>
-            <i class="fa-solid fa-hand-scissors"></i> cuts <i class="fa-solid fa-hand"></i>
-            <br>
-            <i class="fa-solid fa-hand-scissors"></i> decapitates <i class="fa-solid fa-hand-lizard"></i>
-            <br>
-            <i class="fa-solid fa-hand-lizard"></i> poisons <i class="fa-solid fa-hand-spock"></i>
-            <br>
-            <i class="fa-solid fa-hand-lizard"></i> eats <i class="fa-solid fa-hand"></i>
-            <br>
-            <i class="fa-solid fa-hand-spock"></i> smashes <i class="fa-solid fa-hand-scissors"></i>
-            <br>
-            <i class="fa-solid fa-hand-spock"></i> vaporizes <i class="fa-solid fa-hand-back-fist"></i>
-            <br>
-            <h3>Who ever wins gets a point</h3>
-            <h1>The first to 5 wins!</h1>
-          </p>
-        </div>
+    <button id="rules-button">Rules</button>
+    <div id="rules" class="game-rules">
+      <div class="rules-content">
+        <span class="close">X</span>
+        <p>
+          <h1>Make a choice by choosing your weapon:</h1>
+          <h3>Rock <i class="fa-solid fa-hand-back-fist"></i> | Paper <i class="fa-solid fa-hand"></i> | Scissors <i class="fa-solid fa-hand-scissors"></i> | Lizard <i class="fa-solid fa-hand-lizard"></i> | Spock <i class="fa-solid fa-hand-spock"></i></h3>
+          <br>
+          <i class="fa-solid fa-hand-back-fist"></i> crushes <i class="fa-solid fa-hand-scissors"></i>
+          <br>
+          <i class="fa-solid fa-hand-back-fist"></i> crushes <i class="fa-solid fa-hand-lizard"></i>
+          <br>
+          <i class="fa-solid fa-hand"></i> covers <i class="fa-solid fa-hand-back-fist"></i>
+          <br>  
+          <i class="fa-solid fa-hand"></i> disproves <i class="fa-solid fa-hand-spock"></i>
+          <br>
+          <i class="fa-solid fa-hand-scissors"></i> cuts <i class="fa-solid fa-hand"></i>
+          <br>
+          <i class="fa-solid fa-hand-scissors"></i> decapitates <i class="fa-solid fa-hand-lizard"></i>
+          <br>
+          <i class="fa-solid fa-hand-lizard"></i> poisons <i class="fa-solid fa-hand-spock"></i>
+          <br>
+          <i class="fa-solid fa-hand-lizard"></i> eats <i class="fa-solid fa-hand"></i>
+          <br>
+          <i class="fa-solid fa-hand-spock"></i> smashes <i class="fa-solid fa-hand-scissors"></i>
+          <br>
+          <i class="fa-solid fa-hand-spock"></i> vaporizes <i class="fa-solid fa-hand-back-fist"></i>
+          <br>
+          <h3>Who ever wins the round gets a point</h3>
+          <h1>The first to 5 points wins!</h1>
+        </p>
       </div>
-      <br />
-      <p class="credit">This game was created by Sharj Ahmed | 2023</p>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-
+    </div>
+    <script src="assets/javascript/script.js"></script>
+    
     <!-- Font Awesome Script -->
     <script
       src="https://kit.fontawesome.com/04ce61957a.js"
